@@ -1,11 +1,15 @@
 body {
-    font-family: Times new roman-;
+    font-family: Times new roman;
     background-color: lightblue;
     margin-top: 75px;
 }
 
 .center {
     text-align: center;
+}
+.text-color
+{
+    color:darkblue;
 }
 
 .text-big {
