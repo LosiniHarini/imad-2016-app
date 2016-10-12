@@ -3,7 +3,7 @@ var element=document.getElementById('maintext');
 
 element.innerHTML='NEW VALUE';
 //move the image
-var img=document.getElementById('img');
+var img=document.getElementById('disney');
 img.onclick=function(){
     img.style.marginleft='100px';
 };
