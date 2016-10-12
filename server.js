@@ -18,6 +18,21 @@ var articleone={
                 This is my first html project.html stands for hyper text markup language.This language is used to create webpages.It is a simple language.It contains tags and attributes.
             </p>`
 };
+var articletwo={
+    title:'Article Two|LosiniHarini',
+    heading:'Article Two',
+    date:'oct 13,2016',
+    content: `
+    <p>
+                This is my first CSS project<br>
+                This language is used to style webpages.It is a simple to learn.
+            </p>
+             <p>
+                This is my first CSS project.<br>
+                This language is used to style webpages.It is a simple language.It contains tags and attributes.
+            </p>
+    `
+};
 function createtemplate(data){
  var title=data.title;
  var date=data.date;
