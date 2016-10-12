@@ -5,12 +5,69 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var articleone={
+    title:'Article One|LosiniHarini',
+    heading:'Article one',
+    date:'oct 12,2016',
+    content: `<p>
+            This is my first html project.html stands for hyper text markup language.
+                This language is used to create webpages.It is a simple language.It contains tags and attributes.
+            </p>
+             <p>
+                This is my first html project.html stands for hyper text markup language.This language is used to create webpages.It is a simple language.It contains tags and attributes.
+            </p>`
+};
+function createtemplate(data){
+ var title=data.title;
+ var date=data.date;
+ var heading=data.heading;
+ var content=data.content;
+var htmltemplate=`
+    <html>
+    <head>
+        <title>
+           ${title}
+        </title>
+        <style>
+            body
+            {
+                max-width:200px;
+                color:grey;
+                font-family:sans-serif;
+                padding-top: 20px;
+                padding-bottom:20px;
+                padding-left:150px;
+                padding-right:150px;
+                color: aqua;
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+             <a href="/">Home</a>
+        </h1>
+        <h3>${heading}</h3>
+        <div>
+           ${date}
+        </div>
+        <div>
+            ${content}
+        </div>
+        <marquee><font color="RED">Thank you for visiting article-one page!</font></marquee>
+    </body>
+</html>
+`;
+return htmltemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+   res.send(createtemplate(articleone));
 })
 app.get('/article-two',function(req,res){
     res.send('Article two will be served here')
