@@ -9,6 +9,6 @@ img.onclick=function(){
 };
 var element2=document.getElementById('R');
 element2.onclick=function(){
- element2.innerHTML= 'Refreshing count= ',c;
+ element2.innerHTML='Refreshing count= ',c;
   c++;
 };
