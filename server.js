@@ -14,7 +14,9 @@ app.get('/', function (req, res) {
 app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
-
+app.get('/dig.php',function(req,res){
+      res.sendFile(path.join(__dirname, 'ui', 'dig.php'));
+});
 
 app.get('/article-one.html',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
