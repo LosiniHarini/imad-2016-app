@@ -21,7 +21,7 @@ app.get('/article-one.html',function(req,res){
 });
 app.get('/article-two',function(req,res){
     res.send(createtemplate(articletwo));
-});
+}); 
 app.get('/article-three',function(req,res){
     res.send('Article three will be served here')
 })
