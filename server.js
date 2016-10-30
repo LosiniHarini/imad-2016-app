@@ -10,6 +10,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/dig.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'dig.php'));
+});
 app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
