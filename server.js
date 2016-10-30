@@ -14,9 +14,7 @@ app.get('/', function (req, res) {
 app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
-app.get('/sample.js',function(req,res){
-      res.sendFile(path.join(__dirname, 'ui', 'sample.js'));
-});
+
 
 app.get('/article-one.html',function(req,res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
