@@ -109,8 +109,27 @@ app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
 
-app.get('/article-one',function(req,res){
-   res.send(createtemplate(articleone));
+app.get('/article/article-one',function(req,res){
+    var articleName=req.params.articleName;
+    pool.query("SELECT * FROM article WHERE title=",req.params.articleName,function(err,result){
+        if(err){
+            res.status(500).send(err.tostring());
+        }
+        else
+        {
+            if(result.rows.length===0)
+            {
+                res.status(404).send('Article not found');
+                
+            }
+            else
+            {
+                var articledata=result.rows[0];
+                 res.send(createtemplate(articledata));
+            }
+        }
+    });
+  
 });
 app.get('/article-two',function(req,res){
     res.send(createtemplate(articletwo));
