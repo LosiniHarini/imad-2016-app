@@ -16,7 +16,7 @@ var config=
 };
 
 var article={
-'articleone':{
+'article-one':{
     title:'Article One|LosiniHarini',
     heading:'Article one',
     date:'oct 12,2016',
@@ -27,8 +27,8 @@ var article={
              <p>
                 This is my first html project.html stands for hyper text markup language.This language is used to create webpages.It is a simple language.It contains tags and attributes.
             </p>`
-};
-'articletwo':{
+},
+'article-two':{
     title:'Article Two|LosiniHarini',
     heading:'Article Two',
     date:'oct 13,2016',
@@ -42,7 +42,7 @@ var article={
                 This language is used to style webpages.It is a simple language.It contains tags and attributes.
             </p>
     `
-};
+}
 };
 var pool = new Pool(config);
 app.get('/test.db',function(req,res)
