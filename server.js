@@ -16,7 +16,7 @@ var config=
 };
 
 var article={
-' articleone':{
+'articleone':{
     title:'Article One|LosiniHarini',
     heading:'Article one',
     date:'oct 12,2016',
