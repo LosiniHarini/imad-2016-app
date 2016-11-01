@@ -15,9 +15,8 @@ var config=
    
 };
 
-
-
-var articleone={
+var article={
+' articleone':{
     title:'Article One|LosiniHarini',
     heading:'Article one',
     date:'oct 12,2016',
@@ -29,7 +28,7 @@ var articleone={
                 This is my first html project.html stands for hyper text markup language.This language is used to create webpages.It is a simple language.It contains tags and attributes.
             </p>`
 };
-var articletwo={
+'articletwo':{
     title:'Article Two|LosiniHarini',
     heading:'Article Two',
     date:'oct 13,2016',
@@ -42,7 +41,7 @@ var articletwo={
                 This is my first CSS project.<br>
                 This language is used to style webpages.It is a simple language.It contains tags and attributes.
             </p>
-    `
+            };
 };
 var pool = new Pool(config);
 app.get('/test.db',function(req,res)
@@ -109,7 +108,7 @@ app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
 
-app.get('/article/article-one',function(req,res){
+app.get('/article/articleName',function(req,res){
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article WHERE title=',req.params.articleName'",function(err,result){
         if(err){
