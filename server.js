@@ -109,7 +109,7 @@ app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
 
-app.get('/article/article-one',function(req,res){
+app.get('/article/articleNane',function(req,res){
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article WHERE title=",req.params.articleName,function(err,result){
         if(err){
