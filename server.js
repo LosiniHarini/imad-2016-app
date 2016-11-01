@@ -108,9 +108,9 @@ app.get('/', function (req, res) {
 app.get('/sum.html',function(req,res){
       res.sendFile(path.join(__dirname, 'ui', 'sum.html'));
 });
-
+  var articleName=req.params.articleName;
 app.get('/article/articleName',function(req,res){
-    var articleName=req.params.articleName;
+  
     pool.query("SELECT * FROM article WHERE title=',req.params.articleName'",function(err,result){
         if(err){
             res.status(500).send(err.tostring());
