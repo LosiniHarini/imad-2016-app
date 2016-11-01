@@ -110,7 +110,7 @@ app.get('/sum.html',function(req,res){
 });
 
 app.get('/article/article-one',function(req,res){
-    var articleName=req.params.articleName;
+    //var articleName=req.params.articleName;
     pool.query("SELECT * FROM article WHERE title=',req.params.articleName'",function(err,result){
         if(err){
             res.status(500).send(err.tostring());
