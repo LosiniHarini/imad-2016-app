@@ -12,7 +12,7 @@ img.onclick=function(){
     img.style.marginright='200px';
 };
 var element2=document.getElementById('r');
-if(element2.onclick=function(){
+element2.onclick=function(){
  alert("Refreshing count= "+c);
   c++;
-};)
+};
