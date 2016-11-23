@@ -7,7 +7,7 @@ var img=document.getElementById('disney');
 img.onclick=function(){
     img.style.marginleft='200px';
 };
-    var img=document.getElementById('disney1');
+    var img=document.getElementById('pic');
 img.onclick=function(){
     img.style.marginright='200px';
 };
