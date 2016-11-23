@@ -16,22 +16,7 @@ var config=
 };
 
 
-'article-two':{
-    title:'Article Two|LosiniHarini',
-    heading:'Article Two',
-    date:'oct 13,2016',
-    content: `
-    <p>
-                This is my first CSS project<br>
-                This language is used to style webpages.It is a simple to learn.
-            </p>
-             <p>
-                This is my first CSS project.<br>
-                This language is used to style webpages.It is a simple language.It contains tags and attributes.
-            </p>
-    `
-}
-};
+
 var pool = new Pool(config);
 app.get('/test.db',function(req,res)
 {
