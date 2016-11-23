@@ -11,8 +11,8 @@ img.onclick=function(){
 img.onclick=function(){
     img.style.marginright='200px';
 };
-var element2=document.getElementById('R');
-element2.onclick=function(){
- element2.innerHTML='Refreshing count= ',c;
+var element2=document.getElementById('r');
+if(element2.onclick=function(){
+ alert("Refreshing count= "+c);
   c++;
-};
+};)
