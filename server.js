@@ -15,19 +15,7 @@ var config=
    
 };
 
-var article={
-'article-one':{
-    title:'Article One|LosiniHarini',
-    heading:'Article one',
-    date:'oct 12,2016',
-    content: `<p>
-            This is my first html project.html stands for hyper text markup language.
-                This language is used to create webpages.It is a simple language.It contains tags and attributes.
-            </p>
-             <p>
-                This is my first html project.html stands for hyper text markup language.This language is used to create webpages.It is a simple language.It contains tags and attributes.
-            </p>`
-},
+
 'article-two':{
     title:'Article Two|LosiniHarini',
     heading:'Article Two',
@@ -140,6 +128,10 @@ app.get('/article-three',function(req,res){
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/ui/article-one.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
+
 
 app.get('/ui/disney2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'disney2.jpg'));
