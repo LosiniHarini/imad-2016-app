@@ -1,31 +1,31 @@
 console.log('Loaded!');
 var element=document.getElementById('maintext');
 var c=0;
-var n1=document.getElementById('num1');
-var n2=document.getElementById('num2');
+var n1=parseInt(document.getElementById('num1').value);
+var n2=parseInt(document.getElementById('num2').value);
 var re=document.getElementById('res');
 var sum=document.getElementById('add');
 sum.onclick=function()
 {
-    re=n1+n2;
+    re.value=n1+n2;
     
 };
 var subt=document.getElementById('sub');
 subt.onclick=function()
 {
-    re=n1-n2;
+    re.value=n1-n2;
     
 };
 var mult=document.getElementById('mul');
 mult.onclick=function()
 {
-    re=n1*n2;
+    re.value=n1*n2;
     
 };
 var div=document.getElementById('divi');
 divi.onclick=function()
 {
-    re=n1/n2;
+    re.value=n1/n2;
     
 };
 
