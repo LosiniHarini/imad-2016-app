@@ -7,25 +7,25 @@ var re=document.getElementById('res');
 var sum=document.getElementById('add');
 sum.onclick=function()
 {
-    re.value=n1+n2;
+    re.Value=n1+n2;
     
 };
 var subt=document.getElementById('sub');
 subt.onclick=function()
 {
-    re.value=n1-n2;
+    re.Value=n1-n2;
     
 };
 var mult=document.getElementById('mul');
 mult.onclick=function()
 {
-    re.value=n1*n2;
+    re.Value=n1*n2;
     
 };
 var div=document.getElementById('divi');
 div.onclick=function()
 {
-    re.value=n1/n2;
+    re.Value=n1/n2;
     
 };
 
