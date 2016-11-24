@@ -1,13 +1,17 @@
 console.log('Loaded!');
 var element=document.getElementById('maintext');
 var c=0;
+var result;
 var n1=parseInt(document.getElementById('num1').value);
 var n2=parseInt(document.getElementById('num2').value);
 var re=document.getElementById('res');
 var sum=document.getElementById('add');
 sum.onclick=function()
 {
-    re.Value=n1+n2;
+    result=parseInt(n1)+parseInt(n2);
+    if (!isNaN(result)) {
+           document.getElementById('re').value = result;
+       }
     
 };
 var subt=document.getElementById('sub');
