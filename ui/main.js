@@ -4,13 +4,13 @@ var c=0;
 var result;
 var n1=document.getElementById('num1').value;
 var n2=document.getElementById('num2').value;
-var re=document.getElementById('res');
+
 var sum=document.getElementById('add');
 sum.onclick=function()
 {
     result=parseInt(n1)+parseInt(n2);
     if (!isNaN(result)) {
-           document.getElementById('re').value = result;
+           document.getElementById('res').value = result;
        }
     
 };
