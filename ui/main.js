@@ -23,7 +23,7 @@ mult.onclick=function()
     
 };
 var div=document.getElementById('divi');
-divi.onclick=function()
+div.onclick=function()
 {
     re.value=n1/n2;
     
