@@ -19,5 +19,19 @@ var element2=document.getElementById('r');
     console.log("Refresh count:"+c);
     c++;
 };
+function move(elem) {
+    var st = 0;
+    console.log("ELEM " + elem);
 
+    function animate() {
+        st++;
+        console.log(st);
+        elem.style.left = st + 'px';
+        console.log("elem" + elem.style.left);
+        if (st == 100) // check finish condition
+            clearInterval(id)
+    }
+    id = setInterval(animate, 10);
+}
+        
 
