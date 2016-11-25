@@ -1,14 +1,13 @@
 console.log('Loaded!');
 var element=document.getElementById('maintext');
 var c=0;
-var result;
 var n1=document.getElementById('num1').value;
 var n2=document.getElementById('num2').value;
 
 var sum=document.getElementById('add');
 sum.onclick=function()
 {
-    result=parseInt(n1)+parseInt(n2);
+   var result=parseInt(n1)+parseInt(n2);
     if (!isNaN(result)) {
            document.getElementById('res').value = result;
        }
