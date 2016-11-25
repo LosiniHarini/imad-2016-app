@@ -6,7 +6,8 @@
     </head>
     <body>
         <h1><center>MY PROFILE</center></h1>
-        <div class="center">
+        <div id="objmov" style="width:100px; height:100px" class="center">
+            <button onclick="move(objmov)">Click Here</button>
             <img  id='disney' src="ui/disney2.jpg" class="img-medium"/>
                <img  id='pic' src="ui/pic1.jpg" class="img-medium"/>
         </div>
@@ -29,6 +30,20 @@
                     alert(`Hi,i'm a javasript!`);
                     </script>
         <script type="text/javascript" src="/ui/main.js">
+        function move(elem) {
+    var st = 0;
+    console.log("ELEM " + elem);
+
+    function animate() {
+        st++;
+        console.log(st);
+        elem.style.left = st + 'px';
+        console.log("elem" + elem.style.left);
+        if (st == 100) // check finish condition
+            clearInterval(id)
+    }
+    id = setInterval(animate, 10);
+}
         
         </script>
        
