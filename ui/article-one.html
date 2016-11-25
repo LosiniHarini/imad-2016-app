@@ -32,10 +32,23 @@
         RESULT: <input type="text" id="res" value=""/>
         <br>
         <br>
-         <input type="button" id="add" value="+"/>
+         <input type="button" id="add" onclick= "sum()" value="+"/>
          <input type="button" id="sub" value="-"/>
          <input type="button" id="mul" value="*"/>
          <input type="button" id="divi" value="/"/>
+         <script>
+ var n1=document.getElementById('num1').value;
+var n2=document.getElementById('num2').value;
+var sum=document.getElementById('add');
+function sum()
+{
+   var result=parseInt(n1)+parseInt(n2);
+    if (!isNaN(result)) {
+           document.getElementById('res').value = result;
+       }
+    
+};
+         </script>
         
     </body>
 </html>
