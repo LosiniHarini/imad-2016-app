@@ -17,23 +17,29 @@
           <marquee><font size="10 px" color="RED">Thank you for visiting the page</font></marquee>
            
                 </div>
-        <div id="objmov" style="width:100px; height:100px position:absolute" class="center">
-            <button onclick="move(objmov)">Click Here</button>
+        <div onclick="move(this.children[0])" class="center">
             <img  id='disney' src="ui/disney2.jpg" class="img-medium"/>
                <img  id='pic' src="ui/pic1.jpg" class="img-medium"/>
+               <script>
+	function move(elem) {
+	  var left = 0
+	  function frame() {
+	    left++  // update parameters
+	    elem.style.left = left + 'px' // show frame
+	    if (left == 100)  // check finish condition
+	      clearInterval(id)
+	  }
+	  var id = setInterval(frame, 10) // draw every 10ms
+	}
+	</script>
         </div>
         <br>
-        
-                
                     <input id='r' type="Submit"   value="Refresh"/>
                 
                 <script>
                     alert(`Hi,This is my first webapp!`);
                     </script>
         <script type="text/javascript" src="/ui/main.js">
-        
         </script>
-       
-        
     </body>
 </html>
