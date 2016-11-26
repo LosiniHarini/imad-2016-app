@@ -35,13 +35,12 @@
          <input type="button" id="sub" onclick="subt()" value="-"/>
          <input type="button" id="mul" onclick="mult()" value="*"/>
          <input type="button" id="divi" onclick="div()"  value="/"/>
+          <input type="button" id="mod" onclick="modul()"  value="%"/>
          <br/>
          <br/>
          <br/>
          <input type="button" onclick()="erase()" value="RESET"/>
          <script>
-          var n1=document.getElementById('num1').value;
-          var n2=document.getElementById('num2').value;
  function erase()
  {
      n1.value="";
@@ -52,7 +51,8 @@
  
 function sum()
 {
-   
+ var n1=document.getElementById('num1').value;
+var n2=document.getElementById('num2').value;  
    var result=parseInt(n1)+parseInt(n2);
     if (!isNaN(result)) {
            document.getElementById('res').value = result;
@@ -84,6 +84,14 @@ function div()
     var n1=document.getElementById('num1').value;
 var n2=document.getElementById('num2').value;
    var result=parseInt(n1)/parseInt(n2);
+    if (!isNaN(result)) {
+           document.getElementById('res').value = result;
+       }
+       function modul()
+{
+    var n1=document.getElementById('num1').value;
+var n2=document.getElementById('num2').value;
+   var result=parseInt(n1)%parseInt(n2);
     if (!isNaN(result)) {
            document.getElementById('res').value = result;
        }
