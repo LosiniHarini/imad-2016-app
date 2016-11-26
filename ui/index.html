@@ -41,14 +41,6 @@
          <br/>
          <input type="button" onclick()="erase()" value="RESET"/>
          <script>
- function erase()
- {
-     n1.value="";
-     n2.value="";
-     document.getElementById('res').value="";
-     
- }
- 
 function sum()
 {
  var n1=document.getElementById('num1').value;
@@ -95,6 +87,13 @@ var n2=document.getElementById('num2').value;
     if (!isNaN(result)) {
            document.getElementById('res').value = result;
        }
+       function erase()
+ {
+     n1.value="";
+     n2.value="";
+     document.getElementById('res').value="";
+     
+ }
     
 };
      
