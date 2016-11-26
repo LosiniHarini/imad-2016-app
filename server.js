@@ -126,7 +126,30 @@ app.get('/ui/disney2.jpg', function (req, res) {
 app.get('/ui/pic1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic1.jpg'));
 });
-
+app.get('/ui/pic1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pic1.jpg'));
+});
+app.get('/ui/hotairbal.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hotairbal.jpg'));
+});
+app.get('/ui/autumn1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'autumn1.jpg'));
+});
+app.get('/ui/winter.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'winter.jpg'));
+});
+app.get('/ui/waterfalls.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'waterfalls.jpg'));
+});
+app.get('/ui/volcano.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'volcano.jpg'));
+});
+app.get('/ui/plateaus.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'plateaus.jpg'));
+});
+app.get('/ui/myimg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'myimg.jpg'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
